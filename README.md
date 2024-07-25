@@ -1,4 +1,6 @@
 # 리액트 클라이언트 REST API
+클라이언트 URL: https://lang-ko--yoonreatclient.netlify.app/
+
 
 이 프로젝트는 Spring Boot를 사용하여 RESTful API를 제공하는 서버 측 애플리케이션입니다. 이 애플리케이션은 MySQL 데이터베이스와 연동되며, 인증 및 권한 관리를 포함한 기본적인 CRUD 기능을 제공합니다.
 
