@@ -11,6 +11,7 @@
 - 데이터베이스 연동 (MySQL)
 - 사용자 인증 및 권한 관리
 - CRUD 기능 (생성, 읽기, 업데이트, 삭제)
+- 로그인시 Springsecurity를 활용한 JWT인증
 
 ## 기술 스택
 
@@ -19,7 +20,7 @@
 - **Maven**: 프로젝트 빌드 및 의존성 관리를 위한 도구
 - **MySQL**: 관계형 데이터베이스 관리 시스템
 
-## baseURL
+## ServerURL
 http://full-stack-restapi-mysql-env.eba-thy63jtv.ap-northeast-2.elasticbeanstalk.com/
 
 API 엔드포인트
