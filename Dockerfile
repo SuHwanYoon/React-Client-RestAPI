@@ -7,11 +7,8 @@ VOLUME /tmp
 # 외부에서 이 컨테이너로 접근할 수 있도록 포트 8080 열기
 EXPOSE 8080
 
-# 애플리케이션의 jar 파일 경로 설정
-ARG JAR_FILE=full-Stack-Restapi/target/full-Stack-Restapi-0.0.1-SNAPSHOT.jar
-
 # 애플리케이션의 jar 파일을 컨테이너에 복사
-COPY ${JAR_FILE} app.jar
+COPY full-Stack-Restapi/target/*.jar app.jar
 
 # jar 파일 실행
 ENTRYPOINT ["java","-jar","app.jar"]
