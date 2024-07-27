@@ -1,14 +1,14 @@
-# Java 런타임이 포함된 기본 이미지 사용
-FROM openjdk:17-jdk-slim
+# 베이스 이미지로 OpenJDK 17을 사용합니다.
+FROM openjdk:17-jdk-alpine
 
-# /tmp 경로에 볼륨 추가
-VOLUME /tmp
+# 작업 디렉토리를 설정합니다.
+WORKDIR /app
 
-# 외부에서 이 컨테이너로 접근할 수 있도록 포트 8080 열기
+# 로컬에서 빌드된 JAR 파일을 Docker 이미지로 복사합니다.
+COPY target/*.jar app.jar
+
+# 컨테이너가 8080 포트를 사용함을 명시합니다.
 EXPOSE 8080
 
-# 애플리케이션의 jar 파일을 컨테이너에 복사
-COPY full-Stack-Restapi/target/*.jar app.jar
-
-# jar 파일 실행
-ENTRYPOINT ["java","-jar","app.jar"]
+# 애플리케이션을 실행합니다.
+ENTRYPOINT ["java", "-jar", "app.jar"]
