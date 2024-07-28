@@ -21,7 +21,7 @@
 - **MySQL**: 관계형 데이터베이스 관리 시스템
 
 ## ServerURL
-http://full-stack-restapi-mysql-env.eba-thy63jtv.ap-northeast-2.elasticbeanstalk.com/
+http://3.38.94.180:8080/
 
 API 엔드포인트
 기본적으로 제공되는 API 엔드포인트는 다음과 같습니다:
